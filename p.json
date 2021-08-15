@@ -1,0 +1,17 @@
+{
+    "ID": "userservice",
+    "Name": "userservice",
+    "Tags": ["primary"],
+    "Address": "127.0.0.1",
+    "Port": 8080,
+    "EnableTagOverride": false,
+    "Check": {
+      "HTTP": "http://127.0.0.1:8080/health",
+      "Interval": "10s",
+    },
+    "Weights": {
+      "Passing": 10,
+      "Warning": 1
+    }
+  }
+  
